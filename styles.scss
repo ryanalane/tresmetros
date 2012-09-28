@@ -1,0 +1,159 @@
+$white: rgb(243,243,244);
+$grey: rgb(204,199,199);
+$dark_grey: rgb(75,67,71);
+$magenta: rgb(210,18,69);
+$black: rgb(35,31,32);
+
+$test_border_color: transparent;
+$test_border_color: #000;
+
+$body_bg_color: $dark_grey;
+
+$heading_text_color: $white;
+$heading_bg_color: $black;
+$heading_border_color: $black;
+
+$container_bg_color: $grey;
+$container_border_color: $black;
+
+$side_nav_border_color: $black;
+$side_nav_bg_color: rgba(210,18,69,0.8);
+$side_nav_text_color: $black;
+
+
+$content_bg_color: $grey;
+$post_bg_color: $white;
+$post_border_color: $black;
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: inherit;
+	background: $body_bg_color;
+}
+
+$border_width: 0.1em;
+
+div#page_container {
+
+	display: table;
+
+	height: 100%;
+	margin: 0 auto;	
+	position: relative;
+
+	$container_box_shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: $container_box_shadow;
+	-webkit-box-shadow: $container_box_shadow;
+	box-shadow: $container_box_shadow;
+
+	border: $border_width $container_border_color solid;
+	border-top: none;
+
+	$heading_height: 10em;
+
+	div#heading {	
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		color: $heading_text_color;
+		background: $heading_bg_color url('new_york_heading.png');
+		height: $heading_height;
+
+		border: $border_width $heading_border_color solid;
+
+		$heading_box_shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: $heading_box_shadow;
+		-webkit-box-shadow: $heading_box_shadow;
+		box-shadow: $heading_box_shadow;
+
+		h1#site_title {
+
+			position: absolute;
+			bottom: 0;	
+			left: 0;
+			width: 100%;
+			text-align: left;
+
+			font-size: 3em;	
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight: 100;
+			letter-spacing: 0.4em;
+			background: rgba(0,0,0,0.5);
+		}
+	}
+
+	div.empty.cell {
+		display: table-cell;	
+		height: $heading_height;
+	}
+
+	div#content_container {
+		display: table-row;
+		height: 100%;
+
+		div#content {
+			$content_horizontal_padding: 3em;
+			display: table-cell;
+
+			color: inherit;	
+			background: $content_bg_color;
+
+			height: 100%;
+			width: 45em;
+			line-height: 2em;
+			padding: 3.5em $content_horizontal_padding;
+
+			.post {
+				$post_box_shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+				padding: 1.75em 3em;
+				border: $border_width $post_border_color solid;
+
+				-moz-box-shadow: $post_box_shadow;
+				-webkit-box-shadow: $post_box_shadow;
+				box-shadow: $post_box_shadow;
+
+				color: inherit;	
+				background: $post_bg_color;
+
+				.title {
+					font-family: Futura, Helvetica, sans-serif;
+					font-size: 1.25em;
+					margin: 0.25em 0 1em 0;
+				}
+
+				.description {
+					margin-bottom: 1em;	
+					font-style: italic;
+				}
+			}
+		}
+
+
+		div#side_nav {
+			$side_nav_box_shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+			$side_nav_width: 12em;
+
+			display: table-cell;
+
+			width: $side_nav_width - $border_width;
+			height: 100%;
+			border-left: $border-width $black solid;
+			-moz-box-shadow: $side_nav_box_shadow;
+			-webkit-box-shadow: $side_nav_box_shadow;
+			box-shadow: $side_nav_box_shadow;
+
+			padding-top: 1.5em;
+			text-align: right;
+
+			color: $side_nav_text_color;
+			background: $side_nav_bg_color;
+
+			$site_title_font_size: 2.5em;
+			$site_title_letter_spacing: 0.2em;
+
+		}
+	}
+}
