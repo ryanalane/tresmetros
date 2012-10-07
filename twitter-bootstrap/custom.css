@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+  color: inherit;
+  background: #4b4347; }
+
+.container {
+  border: 1px #231f20 solid;
+  border-top: 0;
+  border-bottom: 0;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  color: inherit;
+  background: #ccc7c7;
+  -moz-box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.3); }
+  .container .header {
+    color: inherit;
+    background: url("new_york_heading.png") no-repeat;
+    border-bottom: 1px #231f20 solid;
+    height: 10em;
+    position: relative; }
+    .container .header .site_title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: left;
+      margin: 0;
+      font-size: 3em;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 100;
+      letter-spacing: 0.4em;
+      color: #f3f3f4;
+      background: rgba(0, 0, 0, 0.5); }
+  .container div.top_nav_container {
+    border-bottom: 1px #231f20 solid;
+    background: #231f20; }
+    .container div.top_nav_container ul.top_nav {
+      margin: 0;
+      font-family: Futura, Helvetica, sans-serif;
+      font-size: 1.25em; }
+      .container div.top_nav_container ul.top_nav a li {
+        padding: 0.75em 0;
+        color: #f3f3f4;
+        background: #231f20;
+        text-align: center; }
+        .container div.top_nav_container ul.top_nav a li:hover {
+          color: #231f20;
+          background: #f3f3f4; }
+      .container div.top_nav_container ul.top_nav a:hover {
+        text-decoration: none; }
+  .container div.content_container {
+    height: 100%; }
+    .container div.content_container div {
+      height: 100%;
+      padding: 2em;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .container div.content_container .content .post {
+      height: auto;
+      border: 1px #231f20 solid;
+      line-height: 1.75em;
+      -moz-box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
+      color: inherit;
+      background: #f3f3f4; }
+      .container div.content_container .content .post .title {
+        font-family: Futura, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 2em;
+        letter-spacing: 0.2em;
+        padding: 0; }
+      .container div.content_container .content .post .description {
+        margin-bottom: 1em;
+        font-style: italic; }
+    .container div.content_container .side_bar {
+      border-left: 1px #231f20 solid;
+      color: inherit;
+      background: #5d7247; }
