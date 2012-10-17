@@ -96,8 +96,10 @@ html, body {
 		color: inherit;
 		background: $side_bar_bg_color;
 
+		font-size: 1.25em;
+
 		div {
-			padding: 2em;
+			padding: 3em;
 			height: 100%;
 		}
 
@@ -134,13 +136,12 @@ html, body {
 					background: $container_bg_color;
 				}
 
-				$byline_color: rgb(121,121,121);
-
 				.byline {
 					font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 					font-size: 1.25em;
 					font-weight: 100;
 					margin: 0 0 0.75em 0;
+					letter-spacing: 0.1em;
 
 					color: inherit;
 					background: inherit;
@@ -154,9 +155,7 @@ html, body {
 					padding: 0;
 					font-family: Georgia, "Times New Roman", Times, serif;
 				}
-
 			}
-
 		}
 
 		.side_bar {

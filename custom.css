@@ -52,9 +52,10 @@ html, body {
   .container-fluid div.content_container {
     height: 100%;
     color: inherit;
-    background: #5d7247; }
+    background: #5d7247;
+    font-size: 1.25em; }
     .container-fluid div.content_container div {
-      padding: 2em;
+      padding: 3em;
       height: 100%; }
     .container-fluid div.content_container .content {
       color: inherit;
@@ -83,6 +84,7 @@ html, body {
           font-size: 1.25em;
           font-weight: 100;
           margin: 0 0 0.75em 0;
+          letter-spacing: 0.1em;
           color: inherit;
           background: inherit; }
           .container-fluid div.content_container .content .post .byline .author_name, .container-fluid div.content_container .content .post .byline .post_date {
