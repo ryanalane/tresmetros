@@ -56,6 +56,10 @@ html, body {
 			background: $site_title_bg_color;
 			border: 1px $black solid;
 			border-top: none;
+
+			.m {
+				font-weight: bold;
+			}
 		}
 	}
 

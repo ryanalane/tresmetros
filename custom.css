@@ -32,6 +32,8 @@ html, body {
       background: rgba(0, 0, 0, 0.5);
       border: 1px #231f20 solid;
       border-top: none; }
+      .container-fluid .header .site_title .m {
+        font-weight: bold; }
   .container-fluid div.top_nav_container {
     border-bottom: 1px #231f20 solid;
     background: #231f20; }
