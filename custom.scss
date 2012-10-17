@@ -6,6 +6,7 @@ $black: rgb(35,31,32);
 
 $site_title_color: $white;
 $site_title_bg_color: rgba(0,0,0,0.5);
+$heading_bg_color: rgb(217,239,214);
 
 $body_bg_color: $dark_grey;
 
@@ -30,15 +31,10 @@ html, body {
 
 	color: inherit;
 	background: $container_bg_color;
-	$container_box_shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: $container_box_shadow;
-	-webkit-box-shadow: $container_box_shadow;
-	box-shadow: $container_box_shadow;
 
 	.header {
 		color: inherit;
-		background: url('new_york_heading.png') no-repeat;
-		border-bottom: 1px $black solid;
+		background: $heading_bg_color url('new_york_heading.png') no-repeat;
 
 		height: 10em;
 		position: relative;
@@ -58,6 +54,8 @@ html, body {
 			letter-spacing: 0.4em;
 			color: $site_title_color;
 			background: $site_title_bg_color;
+			border: 1px $black solid;
+			border-top: none;
 		}
 	}
 
@@ -95,16 +93,18 @@ html, body {
 	div.content_container {
 		height: 100%;
 
-		div {
-			height: 100%;
-			padding: 2em;
+		color: inherit;
+		background: $side_bar_bg_color;
 
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;	
+		div {
+			padding: 2em;
+			height: 100%;
 		}
 
 		.content {
+
+			color: inherit;
+			background: $container_bg_color;
 
 			.post {
 
@@ -121,18 +121,40 @@ html, body {
 				background: $white;
 
 				.title {
-					font-family: Futura, Helvetica, sans-serif;
-					font-weight: 100;
+					font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;  
+					// font-family: "Courier New", Courier, Helvetica, sans-serif;
+					font-weight: 700;
 					font-size: 2em;
-					letter-spacing: 0.2em;
+					line-height: 1em;
+					letter-spacing: 0.1em;
+					padding: 0.25em 0 0.25em 0.5em;
+					margin: 0 -0.5em;
+
+					color: inherit;	
+					background: $container_bg_color;
+				}
+
+				$byline_color: rgb(121,121,121);
+
+				.byline {
+					font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+					font-size: 1.25em;
+					font-weight: 100;
+					margin: 0 0 0.75em 0;
+
+					color: inherit;
+					background: inherit;
+
+					.author_name, .post_date {
+						font-weight: 400;
+					}
+				}
+
+				.post_content {
 					padding: 0;
+					font-family: Georgia, "Times New Roman", Times, serif;
 				}
 
-
-				.description {
-					margin-bottom: 1em;	
-					font-style: italic;
-				}
 			}
 
 		}
