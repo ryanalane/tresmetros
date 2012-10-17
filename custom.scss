@@ -13,7 +13,7 @@ $body_bg_color: $dark_grey;
 $container_bg_color: $grey;
 $container_border_color: $black;
 
-$side_bar_bg_color: rgb(93,114,71);
+$side_bar_bg_color: rgb(162,3,57);
 
 html, body {
 	height: 100%;
@@ -96,7 +96,7 @@ html, body {
 		color: inherit;
 		background: $side_bar_bg_color;
 
-		font-size: 1.25em;
+		font-size: 1em;
 
 		div {
 			padding: 3em;
@@ -124,7 +124,6 @@ html, body {
 
 				.title {
 					font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;  
-					// font-family: "Courier New", Courier, Helvetica, sans-serif;
 					font-weight: 700;
 					font-size: 2em;
 					line-height: 1em;

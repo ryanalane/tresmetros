@@ -52,8 +52,8 @@ html, body {
   .container-fluid div.content_container {
     height: 100%;
     color: inherit;
-    background: #5d7247;
-    font-size: 1.25em; }
+    background: #a20339;
+    font-size: 1em; }
     .container-fluid div.content_container div {
       padding: 3em;
       height: 100%; }
@@ -95,4 +95,4 @@ html, body {
     .container-fluid div.content_container .side_bar {
       border-left: 1px #231f20 solid;
       color: inherit;
-      background: #5d7247; }
+      background: #a20339; }
