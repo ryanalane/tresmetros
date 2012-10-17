@@ -49,18 +49,14 @@ html, body {
 			margin: 0;
 
 			font-size: 3em;	
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			// font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;  
 			font-weight: 100;
-			letter-spacing: 0.4em;
+			letter-spacing: 0.5em;
 			color: $site_title_color;
 			background: $site_title_bg_color;
 			border: 1px $black solid;
 			border-top: none;
-
-			.m {
-				font-weight: 400;
-				font-family: Georgia;
-			}
 		}
 	}
 
