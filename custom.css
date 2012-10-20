@@ -49,7 +49,7 @@ html, body {
       -webkit-box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
       box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
       color: inherit;
-      background: #fffcdf; }
+      background: white; }
       .container-fluid div.content_container .content .post .title {
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
         font-weight: 400;
