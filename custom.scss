@@ -59,38 +59,7 @@ html, body {
 			border-top: none;
 		}
 	}
-
-	div.top_nav_container {
-		border-bottom: 1px $black solid;
-		background: $black;
-
-
-		ul.top_nav {
-			margin: 0;
-
-			font-family: Futura, Helvetica, sans-serif;
-			font-size: 1.25em;
-
-			a {
-				li {
-					padding: 0.75em 0;
-					color: $white;
-					background: $black;
-					text-align: center;			
-
-					&:hover {
-						color: $black;	
-						background: $white;
-					}
-				}
-
-				&:hover {
-					text-decoration: none;
-				}	
-			}
-		}
-	}
-
+	
 	div.content_container {
 		height: 100%;
 
