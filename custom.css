@@ -28,6 +28,7 @@ html, body {
       font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
       font-weight: 100;
       letter-spacing: 0.5em;
+      line-height: 1.2em;
       color: #f3f3f4;
       background: rgba(0, 0, 0, 0.5);
       border: 1px #231f20 solid;
@@ -48,7 +49,7 @@ html, body {
       -webkit-box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
       box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
       color: inherit;
-      background: #fffff0; }
+      background: #fffcdf; }
       .container-fluid div.content_container .content .post .title {
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
         font-weight: 400;
