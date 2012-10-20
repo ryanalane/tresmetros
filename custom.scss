@@ -7,6 +7,10 @@ $grey: rgb(204,199,199);
 $dark_grey: rgb(75,67,71);
 $black: rgb(35,31,32);
 
+$section_border_width: 0.2em;
+$section_border_color: $black;
+$section_border_color_transparent: rgba(35,31,32,0);
+
 $site_title_color: $white;
 $site_title_bg_color: rgba(0,0,0,0.5);
 $heading_bg_color: rgb(217,239,214);
@@ -14,6 +18,7 @@ $heading_bg_color: rgb(217,239,214);
 $body_bg_color: $dark_grey;
 
 $container_bg_color: $white;
+$container_bg_color_transparent: rgba(243,243,244,0);
 $container_border_color: $black;
 
 $post_bg_color: $pure_white;
@@ -44,6 +49,8 @@ html, body {
 		height: 10em;
 		position: relative;
 
+		border-bottom: $section_border_width $black solid;
+
 		.site_title {
 
 			position: absolute;
@@ -53,15 +60,16 @@ html, body {
 			text-align: left;
 			margin: 0;
 
+			border: 1px $black solid;
+			border-bottom: none;
+
 			font-size: 3em;	
-			// font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 			font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;  
 			font-weight: 100;
 			letter-spacing: 0.5em;
 			line-height: 1.2em;
 			color: $site_title_color;
 			background: $site_title_bg_color;
-			border: 1px $black solid;
 			border-top: none;
 		}
 	}
@@ -161,11 +169,60 @@ html, body {
 					font-family: Georgia, "Times New Roman", Times, serif;
 				}
 			}
+
+			// Arrow Styles
+
+			&.arrow_box {
+				position: relative;
+				background: $container_bg_color;
+				border-right: $section_border_width $section_border_color solid;
+			}
+			&.arrow_box:after, &.arrow_box:before {
+				left: 100%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute	;
+				pointer-events: none;
+			}
+
+			&.arrow_box:after {
+				border-color: $container_bg_color_transparent;
+				border-left-color: $container_bg_color;
+				border-width: 0.8em;
+				top: 4em;
+				margin-top: -0.8em;
+			}
+			&.arrow_box:before {
+				border-color: $section_border_color_transparent;
+				border-left-color: $section_border_color;
+				border-width: 1.0em;
+				top: 4em;
+				margin-top: -1.0em;
+			}
+
+			// End Arrow Styles
 		}
 
 		.side_bar {
-			border-left: 0.2em $black solid;
-		}
+			.site_title {
+				margin: -0.7em 0.5em 0 -0.5em;
+				font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;  
+				font-weight: 100;
+				letter-spacing: 0.2em;
+				line-height: 1em;
+				text-align: center;
 
+				color: $maroon;
+				background: inherit;
+
+				padding-bottom: 0.1em;
+				border-bottom: 0.1em $dark_grey solid;
+			}	
+
+			.side_bar_nav {
+			}
+		}
 	}
 }

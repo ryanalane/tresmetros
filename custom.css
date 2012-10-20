@@ -16,7 +16,8 @@ html, body {
     color: inherit;
     background: #d9efd6 url("new_york_heading.png") no-repeat;
     height: 10em;
-    position: relative; }
+    position: relative;
+    border-bottom: 0.2em #231f20 solid; }
     .container-fluid .header .site_title {
       position: absolute;
       bottom: 0;
@@ -24,6 +25,8 @@ html, body {
       width: 100%;
       text-align: left;
       margin: 0;
+      border: 1px #231f20 solid;
+      border-bottom: none;
       font-size: 3em;
       font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
       font-weight: 100;
@@ -31,7 +34,6 @@ html, body {
       line-height: 1.2em;
       color: #f3f3f4;
       background: rgba(0, 0, 0, 0.5);
-      border: 1px #231f20 solid;
       border-top: none; }
   .container-fluid div.content_container {
     height: 100%;
@@ -97,5 +99,38 @@ html, body {
       .container-fluid div.content_container .content .post .post_content {
         padding: 0;
         font-family: Georgia, "Times New Roman", Times, serif; }
-    .container-fluid div.content_container .side_bar {
-      border-left: 0.2em #231f20 solid; }
+    .container-fluid div.content_container .content.arrow_box {
+      position: relative;
+      background: #f3f3f4;
+      border-right: 0.2em #231f20 solid; }
+    .container-fluid div.content_container .content.arrow_box:after, .container-fluid div.content_container .content.arrow_box:before {
+      left: 100%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none; }
+    .container-fluid div.content_container .content.arrow_box:after {
+      border-color: rgba(243, 243, 244, 0);
+      border-left-color: #f3f3f4;
+      border-width: 0.8em;
+      top: 4em;
+      margin-top: -0.8em; }
+    .container-fluid div.content_container .content.arrow_box:before {
+      border-color: rgba(35, 31, 32, 0);
+      border-left-color: #231f20;
+      border-width: 1.0em;
+      top: 4em;
+      margin-top: -1em; }
+    .container-fluid div.content_container .side_bar .site_title {
+      margin: -0.7em 0.5em 0 -0.5em;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-weight: 100;
+      letter-spacing: 0.2em;
+      line-height: 1em;
+      text-align: center;
+      color: #a20339;
+      background: inherit;
+      padding-bottom: 0.1em;
+      border-bottom: 0.1em #4b4347 solid; }
