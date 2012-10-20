@@ -11,7 +11,7 @@ html, body {
   min-height: 100%;
   overflow: hidden;
   color: inherit;
-  background: #ccc7c7; }
+  background: #f3f3f4; }
   .container-fluid .header {
     color: inherit;
     background: #d9efd6 url("new_york_heading.png") no-repeat;
@@ -32,67 +32,49 @@ html, body {
       background: rgba(0, 0, 0, 0.5);
       border: 1px #231f20 solid;
       border-top: none; }
-  .container-fluid div.top_nav_container {
-    border-bottom: 1px #231f20 solid;
-    background: #231f20; }
-    .container-fluid div.top_nav_container ul.top_nav {
-      margin: 0;
-      font-family: Futura, Helvetica, sans-serif;
-      font-size: 1.25em; }
-      .container-fluid div.top_nav_container ul.top_nav a li {
-        padding: 0.75em 0;
-        color: #f3f3f4;
-        background: #231f20;
-        text-align: center; }
-        .container-fluid div.top_nav_container ul.top_nav a li:hover {
-          color: #231f20;
-          background: #f3f3f4; }
-      .container-fluid div.top_nav_container ul.top_nav a:hover {
-        text-decoration: none; }
   .container-fluid div.content_container {
     height: 100%;
     color: inherit;
-    background: #a20339;
+    background: #f3f3f4;
     font-size: 1em; }
     .container-fluid div.content_container div {
       padding: 3em;
       height: 100%; }
-    .container-fluid div.content_container .content {
+    .container-fluid div.content_container .content .post {
+      height: auto;
+      border: 1px #231f20 solid;
+      line-height: 1.75em;
+      -moz-box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
       color: inherit;
-      background: #ccc7c7; }
-      .container-fluid div.content_container .content .post {
-        height: auto;
+      background: #fffff0; }
+      .container-fluid div.content_container .content .post .title {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1em;
+        letter-spacing: 0.1em;
+        padding: 0.25em 0 0.25em 0.5em;
+        margin: 0 -0.5em;
+        color: #f3f3f4;
+        background: #a20339;
         border: 1px #231f20 solid;
-        line-height: 1.75em;
-        -moz-box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
-        -webkit-box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3); }
+      .container-fluid div.content_container .content .post .byline {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1.25em;
+        font-weight: 100;
+        margin: 0.25em 0 0.75em 0;
+        letter-spacing: 0.1em;
         color: inherit;
-        background: #f3f3f4; }
-        .container-fluid div.content_container .content .post .title {
-          font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-          font-weight: 700;
-          font-size: 2em;
-          line-height: 1em;
-          letter-spacing: 0.1em;
-          padding: 0.25em 0 0.25em 0.5em;
-          margin: 0 -0.5em;
-          color: inherit;
-          background: #ccc7c7; }
-        .container-fluid div.content_container .content .post .byline {
-          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-          font-size: 1.25em;
-          font-weight: 100;
-          margin: 0 0 0.75em 0;
-          letter-spacing: 0.1em;
-          color: inherit;
-          background: inherit; }
-          .container-fluid div.content_container .content .post .byline .author_name, .container-fluid div.content_container .content .post .byline .post_date {
-            font-weight: 400; }
-        .container-fluid div.content_container .content .post .post_content {
-          padding: 0;
-          font-family: Georgia, "Times New Roman", Times, serif; }
+        background: inherit; }
+        .container-fluid div.content_container .content .post .byline .author_name, .container-fluid div.content_container .content .post .byline .post_date {
+          font-weight: 400; }
+      .container-fluid div.content_container .content .post .post_content {
+        padding: 0;
+        font-family: Georgia, "Times New Roman", Times, serif; }
     .container-fluid div.content_container .side_bar {
-      border-left: 1px #231f20 solid;
-      color: inherit;
-      background: #a20339; }
+      border-left: 1px #231f20 solid; }
