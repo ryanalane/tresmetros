@@ -74,7 +74,7 @@ html, body {
 
 		font-size: 1em;
 
-		div {
+		.content, .post, .side_bar {
 			padding: 3em;
 			height: 100%;
 		}
@@ -94,6 +94,33 @@ html, body {
 
 				color: inherit;	
 				background: $post_bg_color;
+
+				.date {
+					display: inline-block;
+					color: $black;
+					background: $grey;
+					font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+					font-weight: 100;
+
+					font-size: 1.75em;
+					padding: 0.25em;
+					margin-left: -0.25em;
+					margin-bottom: 0.5em;
+					vertical-align: middle;
+
+					.day {
+						display: inline-block;
+						text-align: justify;
+						font-size: 1em;
+						letter-spacing: 0.1em;
+						margin-bottom: 0.1em;
+						font-family: Futura;
+					}
+
+					.month_year_row {
+						display: inline-block;
+					}
+				}
 
 				.title {
 					font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;  
@@ -124,7 +151,7 @@ html, body {
 					color: inherit;
 					background: inherit;
 
-					.author_name, .post_date {
+					.author_name {
 						font-weight: 400;
 					}
 				}

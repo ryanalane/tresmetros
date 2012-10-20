@@ -38,7 +38,7 @@ html, body {
     color: inherit;
     background: #f3f3f4;
     font-size: 1em; }
-    .container-fluid div.content_container div {
+    .container-fluid div.content_container .content, .container-fluid div.content_container .post, .container-fluid div.content_container .side_bar {
       padding: 3em;
       height: 100%; }
     .container-fluid div.content_container .content .post {
@@ -50,6 +50,26 @@ html, body {
       box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
       color: inherit;
       background: white; }
+      .container-fluid div.content_container .content .post .date {
+        display: inline-block;
+        color: #231f20;
+        background: #ccc7c7;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 100;
+        font-size: 1.75em;
+        padding: 0.25em;
+        margin-left: -0.25em;
+        margin-bottom: 0.5em;
+        vertical-align: middle; }
+        .container-fluid div.content_container .content .post .date .day {
+          display: inline-block;
+          text-align: justify;
+          font-size: 1em;
+          letter-spacing: 0.1em;
+          margin-bottom: 0.1em;
+          font-family: Futura; }
+        .container-fluid div.content_container .content .post .date .month_year_row {
+          display: inline-block; }
       .container-fluid div.content_container .content .post .title {
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
         font-weight: 400;
@@ -72,7 +92,7 @@ html, body {
         letter-spacing: 0.1em;
         color: inherit;
         background: inherit; }
-        .container-fluid div.content_container .content .post .byline .author_name, .container-fluid div.content_container .content .post .byline .post_date {
+        .container-fluid div.content_container .content .post .byline .author_name {
           font-weight: 400; }
       .container-fluid div.content_container .content .post .post_content {
         padding: 0;
