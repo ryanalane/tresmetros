@@ -1,3 +1,7 @@
+// Fonts
+@import "fonts/banda_regular.css"
+$site_title_font_family: "Banda Regular", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
 // Colors
 $pure_white: #fff;
 $white: rgb(243,243,244);
@@ -26,6 +30,7 @@ $side_bar_underline_color: $dark_grey;
 $post_bg_color: $pure_white;
 $post_title_color: $white;
 $post_title_bg_color: $maroon;
+
 
 html, body {
 	height: 100%;
@@ -66,7 +71,7 @@ html, body {
 			border-bottom: none;
 
 			font-size: 3em;	
-			font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;  
+			font-family: $site_title_font_family;
 			font-weight: 100;
 			letter-spacing: 0.5em;
 			line-height: 1.2em;
@@ -211,7 +216,7 @@ html, body {
 			padding: 2.25em 2em;
 
 			.site_title {
-				font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;  
+				font-family: $site_title_font_family;  
 				font-weight: 100;
 				font-size: 1.5em;
 				letter-spacing: 0.2em;
