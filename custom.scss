@@ -1,6 +1,7 @@
 // Fonts
 @import "fonts/banda_regular/banda_regular.css";
 $site_title_font_family: "BandaRegularRegular", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$post_content_font_family: Tahoma, Verdana, Helvetica, sans-serif;
 
 // Colors
 $pure_white: #fff;
@@ -53,9 +54,9 @@ html, body {
 		color: inherit;
 		background: $heading_bg_color url('new_york_heading.png') no-repeat;
 
-		height: 10em;
 		position: relative;
 
+		padding-bottom: 3.6em;
 		border-bottom: $section_border_width $black solid;
 
 		.site_title {
@@ -78,6 +79,33 @@ html, body {
 			color: $site_title_color;
 			background: $site_title_bg_color;
 			border-top: none;
+		}
+
+		.header_nav {
+			list-style: none;
+			text-align: right;
+			margin: 0 -1px 0 0;
+			a:hover {
+				text-decoration: none;
+			}
+
+			li {
+				font-size: 1.25em;		
+				line-height: 1.25em;
+				letter-spacing: 0.1em;
+				padding-right: 1.5em;
+
+				font-family: $site_title_font_family;
+				font-weight: bold;
+				border-bottom: 1px transparent solid;
+
+				color: $site_title_color;
+				background: $site_title_bg_color;
+
+				&:hover {
+					border-bottom: 1px $maroon solid;
+				}
+			}
 		}
 	}
 
@@ -173,7 +201,7 @@ html, body {
 
 				.post_content {
 					padding: 0;
-					font-family: Georgia, "Times New Roman", Times, serif;
+					font-family: $post_content_font_family;
 				}
 			}
 
@@ -190,7 +218,7 @@ html, body {
 				content: " ";
 				height: 0;
 				width: 0;
-				position: absolute	;
+				position: absolute;
 				pointer-events: none;
 			}
 
@@ -233,7 +261,7 @@ html, body {
 				list-style: none;
 				margin: 1em 0 0 0.75em;
 				font-size: 1.25em;
-				font-family: Georgia, "Times New Roman", Times, serif;
+				font-family: $site_title_font_family;
 				
 				a:hover {
 					text-decoration: none;
@@ -251,7 +279,6 @@ html, body {
 						border-bottom: 1px $maroon solid;
 					}
 				}
-
 			}
 		}
 	}
