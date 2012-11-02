@@ -52,7 +52,7 @@ html, body {
 
 	.header {
 		color: inherit;
-		background: $heading_bg_color url('new_york_heading.png') no-repeat;
+		background: $heading_bg_color url('new_york_heading.png') no-repeat left bottom;
 
 		position: relative;
 
@@ -82,29 +82,44 @@ html, body {
 		}
 
 		.header_nav {
+			float: right;
 			list-style: none;
 			text-align: right;
 			margin: 0 -1px 0 0;
-			a:hover {
-				text-decoration: none;
-			}
 
 			li {
-				font-size: 1.25em;		
+				font-size: 1.25em;
 				line-height: 1.25em;
 				letter-spacing: 0.1em;
-				padding-right: 1.5em;
+				margin-bottom: 0.5em;
 
 				font-family: $site_title_font_family;
 				font-weight: bold;
-				border-bottom: 1px transparent solid;
 
-				color: $site_title_color;
-				background: $site_title_bg_color;
+				a {
+					padding: 0 0.5em;
+					border: 1px transparent solid;
 
-				&:hover {
-					border-bottom: 1px $maroon solid;
+					color: $site_title_color;
+					background: $site_title_bg_color;
+
+					&:hover {
+						text-decoration: none;
+						color: $black;
+						background: $white;
+						border: 1px $black solid;
+					}
 				}
+			}
+		}
+
+		.search {
+			position: absolute;	
+			bottom: 0;
+			right: 0;
+
+			form {
+				margin: 0;
 			}
 		}
 	}

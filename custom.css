@@ -15,7 +15,7 @@ html, body {
   background: #f3f3f4; }
   .container-fluid .header {
     color: inherit;
-    background: #d9efd6 url("new_york_heading.png") no-repeat;
+    background: #d9efd6 url("new_york_heading.png") no-repeat left bottom;
     position: relative;
     padding-bottom: 3.6em;
     border-bottom: 0.2em #231f20 solid; }
@@ -37,23 +37,33 @@ html, body {
       background: rgba(0, 0, 0, 0.5);
       border-top: none; }
     .container-fluid .header .header_nav {
+      float: right;
       list-style: none;
       text-align: right;
       margin: 0 -1px 0 0; }
-      .container-fluid .header .header_nav a:hover {
-        text-decoration: none; }
       .container-fluid .header .header_nav li {
         font-size: 1.25em;
         line-height: 1.25em;
         letter-spacing: 0.1em;
-        padding-right: 1.5em;
+        margin-bottom: 0.5em;
         font-family: "BandaRegularRegular", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-        font-weight: bold;
-        border-bottom: 1px transparent solid;
-        color: #f3f3f4;
-        background: rgba(0, 0, 0, 0.5); }
-        .container-fluid .header .header_nav li:hover {
-          border-bottom: 1px #a20339 solid; }
+        font-weight: bold; }
+        .container-fluid .header .header_nav li a {
+          padding: 0 0.5em;
+          border: 1px transparent solid;
+          color: #f3f3f4;
+          background: rgba(0, 0, 0, 0.5); }
+          .container-fluid .header .header_nav li a:hover {
+            text-decoration: none;
+            color: #231f20;
+            background: #f3f3f4;
+            border: 1px #231f20 solid; }
+    .container-fluid .header .search {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      .container-fluid .header .search form {
+        margin: 0; }
   .container-fluid div.content_container {
     height: 100%;
     color: inherit;
