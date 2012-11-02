@@ -1,187 +1,55 @@
-@import url(fonts/banda_regular/banda_regular.css);
-@import url(fonts/airfactory_stencil/airfactory_stencil.css);
-html, body {
-  height: 100%;
-  color: inherit;
-  background: #4b4347; }
+/*
+Syntax error: File to import not found or unreadable: fonts/airfactory_stencil/aiAirFactoryRegularss.
+              Load paths:
+                /Users/music/Sites
+                /Users/music/Sites/tresmetros
+        on line 3 of tresmetros/custom.scss
 
-.container-fluid {
-  border: 1px #231f20 solid;
-  border-top: 0;
-  border-bottom: 0;
-  height: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  color: inherit;
-  background: #f3f3f4; }
-  .container-fluid .header {
-    color: inherit;
-    background: #d9efd6 url("new_york_heading.png") no-repeat left bottom;
-    position: relative;
-    padding-bottom: 3.6em;
-    border-bottom: 0.2em #231f20 solid; }
-    .container-fluid .header .site_title {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      text-align: left;
-      margin: 0;
-      border: 1px #231f20 solid;
-      border-bottom: none;
-      font-size: 3em;
-      font-family: "Air Factory", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-      font-weight: 100;
-      letter-spacing: 0.5em;
-      line-height: 1.2em;
-      color: #f3f3f4;
-      background: rgba(0, 0, 0, 0.5);
-      border-top: none; }
-    .container-fluid .header .header_nav {
-      float: right;
-      list-style: none;
-      text-align: right;
-      margin: 0 -1px 0 0; }
-      .container-fluid .header .header_nav li {
-        font-size: 1.25em;
-        line-height: 1.25em;
-        letter-spacing: 0.1em;
-        margin-bottom: 0.5em;
-        font-family: "BandaRegularRegular", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-        font-weight: bold; }
-        .container-fluid .header .header_nav li a {
-          padding: 0 0.5em;
-          border: 1px transparent solid;
-          color: #f3f3f4;
-          background: rgba(0, 0, 0, 0.5); }
-          .container-fluid .header .header_nav li a:hover {
-            text-decoration: none;
-            color: #231f20;
-            background: #f3f3f4;
-            border: 1px #231f20 solid; }
-    .container-fluid .header .search {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 0.5em 0.25em;
-      text-align: right; }
-      .container-fluid .header .search form {
-        margin: 0; }
-        .container-fluid .header .search form .search_input {
-          margin: 0 0.75em 0 0; }
-  .container-fluid div.content_container {
-    height: 100%;
-    color: inherit;
-    background: #f3f3f4;
-    font-size: 1em; }
-    .container-fluid div.content_container .content, .container-fluid div.content_container .post, .container-fluid div.content_container .side_bar {
-      padding: 3em;
-      height: 100%; }
-    .container-fluid div.content_container .content .post {
-      height: auto;
-      border: 1px #231f20 solid;
-      line-height: 1.75em;
-      -moz-box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
-      -webkit-box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
-      box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
-      color: inherit;
-      background: white; }
-      .container-fluid div.content_container .content .post .date {
-        display: inline-block;
-        color: #231f20;
-        background: #ccc7c7;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 100;
-        font-size: 1.75em;
-        padding: 0.25em 0.5em;
-        margin-left: -0.5em;
-        margin-bottom: 0.5em;
-        vertical-align: middle; }
-        .container-fluid div.content_container .content .post .date .day {
-          display: inline-block;
-          text-align: justify;
-          font-size: 1em;
-          letter-spacing: 0.1em;
-          margin-bottom: 0.1em;
-          font-family: Futura; }
-        .container-fluid div.content_container .content .post .date .month_year_row {
-          display: inline-block; }
-      .container-fluid div.content_container .content .post .title {
-        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-        font-weight: 400;
-        font-size: 2em;
-        line-height: 1.1em;
-        letter-spacing: 0.1em;
-        padding: 0.25em 0 0.25em 0.5em;
-        margin: 0 -0.5em;
-        color: #f3f3f4;
-        background: #a20339;
-        border: 1px #231f20 solid;
-        -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
-        -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3); }
-      .container-fluid div.content_container .content .post .byline {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 1.25em;
-        font-weight: 100;
-        margin: 0.25em 0;
-        letter-spacing: 0.1em;
-        color: inherit;
-        background: inherit; }
-        .container-fluid div.content_container .content .post .byline .author_name {
-          font-weight: 400; }
-      .container-fluid div.content_container .content .post .post_content {
-        padding: 0;
-        font-family: Tahoma, Verdana, Helvetica, sans-serif; }
-    .container-fluid div.content_container .content.arrow_box {
-      position: relative;
-      background: #f3f3f4;
-      border-right: 0.2em #231f20 solid; }
-    .container-fluid div.content_container .content.arrow_box:after, .container-fluid div.content_container .content.arrow_box:before {
-      left: 100%;
-      border: solid transparent;
-      content: " ";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none; }
-    .container-fluid div.content_container .content.arrow_box:after {
-      border-color: rgba(243, 243, 244, 0);
-      border-left-color: #f3f3f4;
-      border-width: 0.8em;
-      top: 4em;
-      margin-top: -0.8em; }
-    .container-fluid div.content_container .content.arrow_box:before {
-      border-color: rgba(35, 31, 32, 0);
-      border-left-color: #231f20;
-      border-width: 1.0em;
-      top: 4em;
-      margin-top: -1em; }
-    .container-fluid div.content_container .side_bar {
-      padding: 2.25em 2em; }
-      .container-fluid div.content_container .side_bar .site_title {
-        font-family: "Air Factory", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-        font-weight: 100;
-        font-size: 1.5em;
-        letter-spacing: 0.2em;
-        line-height: 1em;
-        color: #a20339;
-        background: inherit;
-        padding-bottom: 0.1em;
-        border-bottom: 0.1em #4b4347 solid; }
-      .container-fluid div.content_container .side_bar .side_bar_nav {
-        list-style: none;
-        margin: 1em 0 0 0.75em;
-        font-size: 1.25em;
-        font-family: "Air Factory", "Palatino Linotype", "Book Antiqua", Palatino, serif; }
-        .container-fluid div.content_container .side_bar .side_bar_nav a:hover {
-          text-decoration: none; }
-        .container-fluid div.content_container .side_bar .side_bar_nav li {
-          margin-bottom: 0.5em;
-          padding-bottom: 0.25em;
-          font-family: "BandaRegularRegular", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-          color: #231f20;
-          background: inherit;
-          border-bottom: 1px transparent solid; }
-          .container-fluid div.content_container .side_bar .side_bar_nav li:hover {
-            border-bottom: 1px #a20339 solid; }
+1: // Fonts
+2: @import "fonts/banda_regular/banda_regular.css";
+3: @import "fonts/airfactory_stencil/aiAirFactoryRegularss";
+4: 
+5: $serif_title_font_family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+6: $sans_serif_content_font_family: Tahoma, Verdana, Helvetica, sans-serif;
+7: $helvetica_priority: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+8: 
+
+Backtrace:
+tresmetros/custom.scss:3
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/import_node.rb:64:in `rescue in import'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/import_node.rb:42:in `import'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/import_node.rb:25:in `imported_file'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:149:in `rescue in visit_import'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:154:in `visit_import'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/tree/root_node.rb:20:in `render'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/engine.rb:299:in `_render'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/engine.rb:246:in `render'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/plugin/compiler.rb:200:in `each'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/lib/sass/plugin/compiler.rb:298:in `block in watch'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/Users/music/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.1.18/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: fonts/airfactory_stencil/aiAirFactoryRegularss.\A               Load paths:\A                 /Users/music/Sites\A                 /Users/music/Sites/tresmetros\A         on line 3 of tresmetros/custom.scss\A \A 1: // Fonts\A 2: @import \"fonts/banda_regular/banda_regular.css\";\A 3: @import \"fonts/airfactory_stencil/aiAirFactoryRegularss\";\A 4: \A 5: $serif_title_font_family: \"Palatino Linotype\", \"Book Antiqua\", Palatino, serif;\A 6: $sans_serif_content_font_family: Tahoma, Verdana, Helvetica, sans-serif;\A 7: $helvetica_priority: \"Helvetica Neue\", Helvetica, Arial, sans-serif;;\A 8: "; }
