@@ -61,9 +61,13 @@ html, body {
     .container-fluid .header .search {
       position: absolute;
       bottom: 0;
-      right: 0; }
+      right: 0;
+      padding: 0.5em 0.25em;
+      text-align: right; }
       .container-fluid .header .search form {
         margin: 0; }
+        .container-fluid .header .search form .search_input {
+          margin: 0 0.75em 0 0; }
   .container-fluid div.content_container {
     height: 100%;
     color: inherit;
