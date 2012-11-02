@@ -68,7 +68,11 @@ html, body {
       .container-fluid .header .search form {
         margin: 0; }
         .container-fluid .header .search form .search_input {
-          margin: 0 0.75em 0 0; }
+          margin: 0 0.75em 0 0;
+          font-family: Tahoma, Verdana, Helvetica, sans-serif; }
+        .container-fluid .header .search form input[type="submit"] {
+          font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+          letter-spacing: 0.1em; }
   .container-fluid div.content_container {
     height: 100%;
     color: inherit;

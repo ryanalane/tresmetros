@@ -132,9 +132,15 @@ html, body {
 
 			form {
 				margin: 0;
-				
+
 				.search_input {
 					margin: 0 0.75em 0 0;
+					font-family: $sans_serif_content_font_family;
+				}
+
+				input[type="submit"] {
+					font-family: $serif_title_font_family;
+					letter-spacing: 0.1em;
 				}
 			}
 		}
