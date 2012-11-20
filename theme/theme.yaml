@@ -1,23 +1,33 @@
 ---
 author_link: http://ryanalane.com
 author_name: 'Ryan Lane'
-class: website
+class: blog
 description: ''
 elements:
-  blog_static_files:
-    component: ~
-    data:
-      - css
-      - images
-      - js
-    importer: blog_static_files
   template_set:
     component: ~
     data:
       base_path: templates
       label: 'exported_template set'
       templates:
+        archive:
+          category_entry_listing:
+            label: 'Category Entry Listing'
+            mappings:
+              category:
+                archive_type: Category
+                preferred: 1
+          monthly_entry_listing:
+            label: 'Monthly Entry Listing'
+            mappings:
+              monthly:
+                archive_type: Monthly
+                preferred: 1
         index:
+          archive_index:
+            label: 'Archive Index'
+            outfile: archives.html
+            rebuild_me: 1
           feed_recent:
             label: 'Feed - Recent Entries'
             outfile: atom.xml
@@ -38,6 +48,13 @@ elements:
             label: Stylesheet
             outfile: styles.css
             rebuild_me: 1
+        individual:
+          entry:
+            label: Entry
+            mappings:
+              individual:
+                archive_type: Individual
+                preferred: 1
         module:
           banner_footer:
             label: 'Banner Footer'
@@ -76,12 +93,32 @@ elements:
           search_results:
             label: 'Search Results'
         widget:
-          blogs:
-            label: Blogs
+          about_this_page:
+            label: 'About This Page'
+          archive_widgets_group:
+            label: 'Archive Widgets Group'
+          author_archive_list:
+            label: 'Author Archives'
+          calendar:
+            label: Calendar
+          category_archive_list:
+            label: 'Category Archives'
           creative_commons:
             label: 'Creative Commons'
+          current_author_monthly_archive_list:
+            label: 'Current Author Monthly Archives'
+          current_category_monthly_archive_list:
+            label: 'Current Category Monthly Archives'
+          date_based_author_archives:
+            label: 'Date-Based Author Archives'
+          date_based_category_archives:
+            label: 'Date-Based Category Archives'
           main_index_widgets_group:
             label: 'Home Page Widgets Group'
+          monthly_archive_dropdown:
+            label: 'Monthly Archives Dropdown'
+          monthly_archive_list:
+            label: 'Monthly Archives'
           openid:
             label: 'OpenID Accepted'
           pages_list:
@@ -110,8 +147,9 @@ elements:
             order: 1000
             widgets:
               - Search
-              - Blogs
+              - 'About This Page'
               - 'Home Page Widgets Group'
+              - 'Archive Widgets Group'
               - 'Page Listing'
               - Syndication
               - 'OpenID Accepted'
@@ -120,7 +158,7 @@ elements:
             label: '3-column layout - Primary Sidebar'
             order: 1000
             widgets:
-              - Blogs
+              - 'Archive Widgets Group'
               - 'Page Listing'
               - Syndication
               - 'OpenID Accepted'
@@ -131,6 +169,7 @@ elements:
             widgets:
               - Search
               - 'Home Page Widgets Group'
+              - 'About This Page'
     importer: template_set
 id: tresmetros
 label: tresmetros
