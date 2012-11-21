@@ -163,7 +163,7 @@ html, body {
       margin-top: -1em; }
     .container-fluid div.content_container .side_bar {
       padding: 2.25em 2em; }
-      .container-fluid div.content_container .side_bar .site_title {
+      .container-fluid div.content_container .side_bar .side_heading {
         font-family: "AirFactoryRegular", "Palatino Linotype", "Book Antiqua", Palatino, serif;
         font-weight: 100;
         font-size: 1.5em;
