@@ -31,9 +31,6 @@
     
     <div class="content_container row-fluid">
         <div class="content span9 arrow_box">
-<mt:Entries>
-                            <$mt:Include module="Entry Summary"$>
-</mt:Entries>
             <div class="post">
                 <span class="date">
                     <div class="day">20</div>
@@ -48,13 +45,9 @@
                 </div>
             </div>
         </div>
-        <div class="side_bar span3">
-            <h2 class="site_title">tresMetros</h2>
-            <ol class="side_bar_nav">
-                <a href="#"><li>Nosotros</li></a>
-                <a href="#"><li>Deportes</li></a>
-            </ol>
-        </div>
+
+        <$mt:Include module="<__trans phrase="Sidebar">"$>
+
     </div>
 
 </div>
