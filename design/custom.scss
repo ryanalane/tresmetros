@@ -162,8 +162,6 @@ html, body {
 
 		.content {
 
-			height: 100%;
-
 			.post {
 
 				height: auto;
@@ -283,6 +281,9 @@ html, body {
 		.side_bar {
 			padding: 2.25em 2em;
 			height: auto;
+
+			border-left: $section_border_width $section_border_color solid;
+			margin-left: -2px;
 
 			h2 {
 				font-family: $site_title_font_family;  
