@@ -150,8 +150,6 @@ html, body {
 	}
 
 	div.content_container {
-		height: 100%;
-		min-height: 100%;
 
 		color: inherit;
 		background: $container_bg_color;
@@ -163,6 +161,8 @@ html, body {
 		}
 
 		.content {
+
+			height: 100%;
 
 			.post {
 
