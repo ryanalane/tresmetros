@@ -11,7 +11,6 @@ html, body {
   border-bottom: 0;
   height: 100%;
   min-height: 100%;
-  overflow: hidden;
   color: inherit;
   background: #f3f3f4; }
   .container-fluid .header {
@@ -189,3 +188,5 @@ html, body {
           border-bottom: 1px transparent solid; }
           .container-fluid div.content_container .side_bar .side_bar_nav li:hover {
             border-bottom: 1px #a20339 solid; }
+      .container-fluid div.content_container .side_bar .social_timeline_container {
+        width: 292px; }

@@ -54,7 +54,6 @@ html, body {
 	border-bottom: 0;
 	height: 100%;
 	min-height: 100%;
-	overflow: hidden;
 
 	color: inherit;
 	background: $container_bg_color;
@@ -279,6 +278,7 @@ html, body {
 
 		.side_bar {
 			padding: 2.25em 2em;
+			// min-width: 350px;
 
 			.side_heading {
 				font-family: $site_title_font_family;  
@@ -317,6 +317,10 @@ html, body {
 						border-bottom: 1px $maroon solid;
 					}
 				}
+			}
+
+			.social_timeline_container {
+				width: 292px;		
 			}
 		}
 	}
