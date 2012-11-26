@@ -124,6 +124,13 @@ html, body {
         -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
         -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
         box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3); }
+        .container-fluid div.content_container .content .post .title a {
+          color: inherit;
+          background: inherit; }
+          .container-fluid div.content_container .content .post .title a:hover {
+            color: #ccc7c7;
+            backround: inherit;
+            text-decoration: none; }
       .container-fluid div.content_container .content .post .byline {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 1.25em;

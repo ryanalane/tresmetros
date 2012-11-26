@@ -216,6 +216,17 @@ html, body {
 					background: $post_title_bg_color;
 					border: 1px $black solid;
 
+					a {
+						color: inherit;	
+						background: inherit;	
+
+						&:hover {
+							color: $grey;
+							backround: inherit;
+							text-decoration: none;
+						}
+					}					
+
 					$post_title_box_shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
 					-moz-box-shadow: $post_title_box_shadow;
 					-webkit-box-shadow: $post_title_box_shadow;
