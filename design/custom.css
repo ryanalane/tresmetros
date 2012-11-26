@@ -78,7 +78,7 @@ html, body {
     color: inherit;
     background: #f3f3f4;
     font-size: 1em; }
-    .container-fluid div.content_container .content, .container-fluid div.content_container .post, .container-fluid div.content_container .side_bar {
+    .container-fluid div.content_container .content, .container-fluid div.content_container .post {
       padding: 3em; }
     .container-fluid div.content_container .content .post {
       height: auto;
