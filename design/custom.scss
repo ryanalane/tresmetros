@@ -156,7 +156,6 @@ html, body {
 
 		.content, .post, .side_bar {
 			padding: 3em;
-			height: 100%;
 		}
 
 		.content {
@@ -279,6 +278,7 @@ html, body {
 
 		.side_bar {
 			padding: 2.25em 2em;
+			height: auto;
 
 			h2 {
 				font-family: $site_title_font_family;  
