@@ -5,6 +5,9 @@ html, body {
   color: inherit;
   background: #f3f3f4; }
 
+.clear {
+  clear: both; }
+
 .container-fluid {
   border: 1px #231f20 solid;
   border-top: 0;

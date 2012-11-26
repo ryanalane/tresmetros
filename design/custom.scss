@@ -48,6 +48,10 @@ html, body {
 	background: $body_bg_color;
 }
 
+.clear {
+	clear: both;
+}
+
 .container-fluid {
 	border: 1px $container_border_color solid;
 	border-top: 0;
