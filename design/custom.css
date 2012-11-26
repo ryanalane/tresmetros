@@ -109,7 +109,8 @@ html, body {
           margin-bottom: 0.1em;
           font-family: Futura; }
         .container-fluid div.content_container .content .post .date .month_year_row {
-          display: inline-block; }
+          display: inline-block;
+          text-transform: lowercase; }
       .container-fluid div.content_container .content .post .title {
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
         font-weight: 400;
