@@ -29,7 +29,7 @@ $site_title_color: $white;
 $site_title_bg_color: rgba(0,0,0,0.5);
 $heading_bg_color: rgb(217,239,214);
 
-$body_bg_color: $dark_grey;
+$body_bg_color: $white;
 
 $container_bg_color: $white;
 $container_bg_color_transparent: rgba(243,243,244,0);
@@ -278,9 +278,8 @@ html, body {
 
 		.side_bar {
 			padding: 2.25em 2em;
-			// min-width: 350px;
 
-			.side_heading {
+			h2 {
 				font-family: $site_title_font_family;  
 				font-weight: 100;
 				font-size: 1.5em;
@@ -293,6 +292,12 @@ html, body {
 				padding-bottom: 0.1em;
 				border-bottom: 0.1em $side_bar_underline_color solid;
 			}	
+
+			h3 {
+				font-family: $subtitle_font_family;
+				font-size: 1.25em;
+				font-weight: 100;
+			}
 
 			.side_bar_nav {
 				list-style: none;

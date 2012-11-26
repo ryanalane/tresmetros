@@ -3,7 +3,7 @@
 html, body {
   height: 100%;
   color: inherit;
-  background: #4b4347; }
+  background: #f3f3f4; }
 
 .container-fluid {
   border: 1px #231f20 solid;
@@ -162,7 +162,7 @@ html, body {
       margin-top: -1em; }
     .container-fluid div.content_container .side_bar {
       padding: 2.25em 2em; }
-      .container-fluid div.content_container .side_bar .side_heading {
+      .container-fluid div.content_container .side_bar h2 {
         font-family: "AirFactoryRegular", "Palatino Linotype", "Book Antiqua", Palatino, serif;
         font-weight: 100;
         font-size: 1.5em;
@@ -172,6 +172,10 @@ html, body {
         background: inherit;
         padding-bottom: 0.1em;
         border-bottom: 0.1em #4b4347 solid; }
+      .container-fluid div.content_container .side_bar h3 {
+        font-family: "BandaRegularRegular", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-size: 1.25em;
+        font-weight: 100; }
       .container-fluid div.content_container .side_bar .side_bar_nav {
         list-style: none;
         margin: 1em 0 0 0.75em;
@@ -188,3 +192,5 @@ html, body {
           border-bottom: 1px transparent solid; }
           .container-fluid div.content_container .side_bar .side_bar_nav li:hover {
             border-bottom: 1px #a20339 solid; }
+      .container-fluid div.content_container .side_bar .social_timeline_container {
+        width: auto; }
