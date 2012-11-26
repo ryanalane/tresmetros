@@ -79,7 +79,8 @@ html, body {
     font-size: 1em; }
     .container-fluid div.content_container .content, .container-fluid div.content_container .post, .container-fluid div.content_container .side_bar {
       padding: 3em;
-      height: 100%; }
+      min-height: 100%;
+      height: auto; }
     .container-fluid div.content_container .content .post {
       height: auto;
       border: 1px #231f20 solid;
