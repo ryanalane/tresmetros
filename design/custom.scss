@@ -168,6 +168,8 @@ html, body {
 				border: 1px $black solid;
 				line-height: 1.75em;
 
+				margin-bottom: 4em;
+
 				$post_box_shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3);
 				-moz-box-shadow: $post_box_shadow;
 				-webkit-box-shadow: $post_box_shadow;
