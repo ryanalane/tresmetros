@@ -40,6 +40,7 @@ $side_bar_underline_color: $dark_grey;
 $post_bg_color: $pure_white;
 $post_title_color: $white;
 $post_title_bg_color: $maroon;
+$post_link_color: $maroon;
 
 
 html, body {
@@ -254,6 +255,15 @@ html, body {
 				.post_content {
 					padding: 0;
 					font-family: $post_content_font_family;
+				}
+
+				.post_footer {
+					margin-top: 0.5em;
+					// font-size: 1.1em;
+
+					a.comments {
+						color: $post_link_color;
+					}
 				}
 			}
 

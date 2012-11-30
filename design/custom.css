@@ -146,6 +146,10 @@ html, body {
       .container-fluid div.content_container .content .post .post_content {
         padding: 0;
         font-family: Tahoma, Verdana, Helvetica, sans-serif; }
+      .container-fluid div.content_container .content .post .post_footer {
+        margin-top: 0.5em; }
+        .container-fluid div.content_container .content .post .post_footer a.comments {
+          color: #a20339; }
     .container-fluid div.content_container .content.arrow_box {
       position: relative;
       background: #f3f3f4;
