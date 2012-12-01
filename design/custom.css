@@ -151,15 +151,29 @@ html, body {
         .container-fluid div.content_container .content .post .post_footer a.comments_link {
           color: #a20339; }
       .container-fluid div.content_container .content .post .comments {
-        border-top: 1px black dotted;
-        margin-top: 1em; }
+        border-top: 0.1em black solid;
+        margin-top: 0.75em; }
         .container-fluid div.content_container .content .post .comments .comment {
+          border: 0.1em #4b4347 dotted;
+          margin-top: 1em;
+          padding: 1em;
           color: inherit;
           background-color: #f3f3f4; }
+          .container-fluid div.content_container .content .post .comments .comment h3, .container-fluid div.content_container .content .post .comments .comment p {
+            margin: 0; }
           .container-fluid div.content_container .content .post .comments .comment h3 {
-            margin-top: 0;
-            font-size: 1.1em; }
-          .container-fluid div.content_container .content .post .comments .comment p {
+            line-height: 1.5em;
+            font-size: 0.9em;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            letter-spacing: 0.1em; }
+          .container-fluid div.content_container .content .post .comments .comment p.comment_datetime {
+            font-size: 0.9em;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+          .container-fluid div.content_container .content .post .comments .comment p.comment_text {
+            color: inherit;
+            background: white;
+            padding: 0.5em;
             font-family: Tahoma, Verdana, Helvetica, sans-serif; }
     .container-fluid div.content_container .content.arrow_box {
       position: relative;

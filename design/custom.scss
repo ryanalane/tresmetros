@@ -268,18 +268,38 @@ html, body {
 				}
 
 				.comments {
-					border-top: 1px black dotted;
-					margin-top: 1em;
+					border-top: 0.1em black solid;
+					margin-top: 0.75em;
 
 					.comment {
+						border: 0.1em $dark_grey dotted;
+						margin-top: 1em;
+						padding: 1em;
+
 						color: inherit;
 						background-color: $comment_bg_color;
+
+						h3, p {
+							margin: 0;
+						}
+
 						h3 {
-							margin-top: 0;
-							font-size: 1.1em;
+							line-height: 1.5em;
+							font-size: 0.9em;
+							font-family: $helvetica_priority;
+							font-weight: bold;
+							letter-spacing: 0.1em;
+						}
+						p.comment_datetime {
+							font-size: 0.9em;
+							font-family: $helvetica_priority;
 						}
 						
-						p {
+						p.comment_text {
+							color: inherit;
+							background: $pure_white;
+							padding: 0.5em;
+
 							font-family: $post_content_font_family;	
 						}
 					}	
