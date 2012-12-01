@@ -268,7 +268,7 @@ html, body {
 				}
 
 				#comments {
-					border-top: 0.1em black solid;
+					border-top: 0.1em $dark_grey solid;
 					margin-top: 0.75em;
 
 					.comment {
@@ -303,6 +303,20 @@ html, body {
 							font-family: $post_content_font_family;	
 						}
 					}	
+				}
+
+				.comment_submission {
+					margin-top: 2em;
+					padding: 0.5em 1em; 
+					border: 0.1em $dark_grey dotted;
+ 					color: inherit;
+					background: $comment_bg_color;
+
+					h2 {
+						font-size: 1.25em;	
+						line-height: 1.5em;
+						font-family: $helvetica_priority;
+					}
 				}
 			}
 

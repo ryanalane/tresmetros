@@ -151,7 +151,7 @@ html, body {
         .container-fluid div.content_container .content .post .post_footer a.comments_link {
           color: #a20339; }
       .container-fluid div.content_container .content .post #comments {
-        border-top: 0.1em black solid;
+        border-top: 0.1em #4b4347 solid;
         margin-top: 0.75em; }
         .container-fluid div.content_container .content .post #comments .comment {
           border: 0.1em #4b4347 dotted;
@@ -175,6 +175,16 @@ html, body {
             background: white;
             padding: 0.5em;
             font-family: Tahoma, Verdana, Helvetica, sans-serif; }
+      .container-fluid div.content_container .content .post .comment_submission {
+        margin-top: 2em;
+        padding: 0.5em 1em;
+        border: 0.1em #4b4347 dotted;
+        color: inherit;
+        background: #f3f3f4; }
+        .container-fluid div.content_container .content .post .comment_submission h2 {
+          font-size: 1.25em;
+          line-height: 1.5em;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
     .container-fluid div.content_container .content.arrow_box {
       position: relative;
       background: #f3f3f4;
