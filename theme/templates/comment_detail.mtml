@@ -1,23 +1,24 @@
 <div id="comment-<$mt:CommentID$>" class="comment<mt:IfCommentParent> comment-reply</mt:IfCommentParent><mt:IfCommenterIsEntryAuthor> entry-author-comment</mt:IfCommenterIsEntryAuthor>">
-    <div class="inner">
-        <div class="comment-header">
-            <div class="asset-meta">
-                <span class="byline">
-                    <$mt:CommentAuthorIdentity$>
+
+    <h3><$mt:CommentAuthorIdentity$></h3>
+    <p class="comment_datetime"><$mt:CommentDate format_name="%d.%m.%Y a las %H:%M"$></p>
+
+    <div class="asset-meta">
+        <span class="byline">
+            <$mt:CommentAuthorIdentity$>
 <mt:IfCommentParent>
-                    <span class="vcard author"><$mt:CommentAuthorLink$></span> replied to <a href="<mt:CommentParent><$mt:CommentLink$></mt:CommentParent>">comment from <mt:CommentParent><$mt:CommentAuthor$></mt:CommentParent></a>
+            <span class="vcard author"><$mt:CommentAuthorLink$></span> replied to <a href="<mt:CommentParent><$mt:CommentLink$></mt:CommentParent>">comment from <mt:CommentParent><$mt:CommentAuthor$></mt:CommentParent></a>
 <mt:Else>
-                    <span class="vcard author"><$mt:CommentAuthorLink$></span>
+            <span class="vcard author"><$mt:CommentAuthorLink$></span>
 </mt:IfCommentParent>
-                    | <a href="<$mt:CommentLink$>"><abbr class="published" title="<$mt:CommentDate format_name="iso8601"$>"><$mt:CommentDate$></abbr></a>
+            | <a href="<$mt:CommentLink$>"><abbr class="published" title="<$mt:CommentDate format_name="iso8601"$>"><$mt:CommentDate$></abbr></a>
 <mt:IfCommentsAccepted>
-                    | <$mt:CommentReplyToLink$>
+            | <$mt:CommentReplyToLink$>
 </mt:IfCommentsAccepted>
-                </span>
-            </div>
-        </div>
-        <div class="comment-content">
-            <$mt:CommentBody$>
-        </div>
+        </span>
     </div>
+    <p class="comment_text">
+        <$mt:CommentBody$>
+    </p>
+
 </div>
