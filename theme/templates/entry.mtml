@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<!DOCTYPE html>
+<html>
 <head>
     <$mt:Include module="HTML Head"$>
     <$mt:Var name="comments_per_page" value="50"$>
@@ -18,94 +17,80 @@
     <title><$mt:EntryTitle encode_html="1"$> - <$mt:BlogName encode_html="1"$></title>
 </head>
 <body id="<$mt:BlogThemeID$>" class="mt-entry-archive <$mt:Var name="page_layout"$>">
-    <div id="container">
-        <div id="container-inner">
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
 
-            <$mt:Include module="Banner Header"$>
+<div class="container-fluid">
 
-
-            <div id="content">
-                <div id="content-inner">
-
-
-                    <div id="alpha">
-                        <div id="alpha-inner">
-
-
-                            <div id="entry-<$mt:EntryID$>" class="entry-asset asset hentry">
-                                <div class="asset-header">
-                                    <h1 id="page-title" class="asset-name entry-title"><$mt:EntryTitle$></h1>
-                                    <div class="asset-meta">
-                                        <span class="byline">
-<mt:If tag="EntryAuthorDisplayName">
-                                            By <span class="vcard author"><$mt:EntryAuthorLink show_hcard="1"$></span> on <abbr class="published" title="<$mt:EntryDate format_name="iso8601"$>"><$mt:EntryDate format="%x %X"$></abbr>
-<mt:Else>
-                                            <abbr class="published" title="<$mt:EntryDate format_name="iso8601"$>"><$mt:EntryDate format="%x %X"$></abbr>
-</mt:If>
-                                        </span>
-<mt:IfCommentsActive>
-                                        <span class="separator">|</span> <a href="<$mt:EntryPermalink$>#comments"><$mt:EntryCommentCount singular="1 Comment" plural="# Comments" none="No Comments"$></a>
-</mt:IfCommentsActive>
-<mt:IfPingsActive>
-                                        <span class="separator">|</span> <a href="<$mt:EntryPermalink$>#trackbacks"><$mt:EntryTrackbackCount singular="1 TrackBack" plural="# TrackBacks" none="No TrackBacks"$></a>
-</mt:IfPingsActive>
-                                    </div>
-                                </div>
-                                <div class="asset-content entry-content">
-<mt:If tag="EntryBody">
-                                    <div class="asset-body">
-                                        <$mt:EntryBody$>
-                                    </div>
-</mt:If>
-<mt:If tag="EntryMore" convert_breaks="0">
-                                    <div id="more" class="asset-more">
-                                        <$mt:EntryMore$>
-                                    </div>
-</mt:If>
-                                </div>
-                                <div class="asset-footer">
-<mt:IfArchiveTypeEnabled archive_type="Category">
-    <mt:If tag="EntryCategories">
-                                    <div class="entry-categories">
-                                        <h4>Categories<span class="delimiter">:</span></h4>
-                                        <ul>
-                                            <li class="entry-category"><mt:EntryCategories glue='<span class="delimiter">,</span></li> <li class="entry-category">'><a href="<$mt:CategoryArchiveLink$>" rel="tag"><$mt:CategoryLabel$></a></mt:EntryCategories></li>
-                                        </ul>
-                                    </div>
-    </mt:If>
-</mt:IfArchiveTypeEnabled>
-<mt:EntryIfTagged>
-                                    <div class="entry-tags">
-                                        <h4>Tags<span class="delimiter">:</span></h4>
-                                        <ul>
-                                            <li><mt:EntryTags glue='<span class="delimiter">,</span></li> <li>'><a href="javascript:void(0)" onclick="location.href='<$mt:TagSearchLink encode_js="1"$>';return false;" rel="tag"><$mt:TagName$></a></mt:EntryTags></li>
-                                        </ul>
-                                    </div>
-</mt:EntryIfTagged>
-                                </div>
-                            </div>
-
-
-                    <$mt:Include module="Trackbacks"$>
-                    <$mt:Include module="Comments"$>
-
-
-                        </div>
-                    </div>
-
-
-                    <$mt:Include module="Sidebar"$>
-
-
-                </div>
+    <div class="row-fluid">
+        <div class="header span12">
+            <h1 class="site_title">
+                tresMetros  
+            </h1>
+            <div class="search span4">
+                <form id="search_form">
+                    <input type="text" class="search_input span8">
+                    <input type="submit" class="btn span3" value="Buscar">
+                </form>
             </div>
-
-
-            <$mt:Include module="Banner Footer"$>
-
-
+            <ol class="header_nav span4">
+                <li><a href="#">Archivos</a></li>
+                <li><a href="#">Temas</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Subscripci&oacute;n</a></li>
+                <li><a href="#">RSS</a></li>
+            </ol>
         </div>
     </div>
+    
+    <div class="content_container row-fluid">
+        <div class="content span8 arrow_box">
+            
+            <div class="post" id="entry-<$mt:EntryID$>">
+                <span class="date">  
+                    <div class="day"><$mt:EntryDate format="%d"$></div>
+                    <div class="month_year_row">
+                        <$mt:EntryDate format="%b"$> <$mt:EntryDate format="%Y"$>
+                    </div>
+                </span>
+                <h2 class="title"><a href="<$mt:EntryPermalink$>" rel="bookmark"><$mt:EntryTitle$></a></h2>
+                    <h3 class="byline">
+                <mt:If tag="EntryAuthorDisplayName">
+                    escrito de <span class="author_name"><$mt:EntryAuthorLink show_hcard="1"$></span>
+                </mt:If>
+                    </h3>
+
+                <mt:If tag="EntryBody">
+                    <div class="post_content">
+                            <$mt:EntryBody$>
+                    </div>
+                </mt:If>
+
+                <div class="post_footer">
+
+                    <mt:IfCommentsActive>
+                        <a href="<$mt:EntryPermalink$>#comments" class="comments_link">
+                            <$mt:EntryCommentCount singular="<__trans phrase="1 comentario">" plural="<__trans phrase="# comentarios">" none="<__trans phrase="No comentarios">"$>
+                        </a>
+                    </mt:IfCommentsActive>
+
+                </div>
+
+        </div>
+
+        <$mt:Include module="<__trans phrase="Sidebar">"$>
+
+        <div class="clear"></div>
+
+    </div>
+
+</div>
 </body>
 </html>
