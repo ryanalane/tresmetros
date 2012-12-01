@@ -20,4 +20,18 @@
         </div>
     </mt:If>
 
+    <div class="post_footer">
+        <a href="entry_page.html" class="comments_link">4 comentarios</a>
+
+        <mt:IfCommentsActive>
+            <a href="<$mt:EntryPermalink$>#comments" class="comments_link">
+                <$mt:EntryCommentCount singular="<__trans phrase="1 comentario">" plural="<__trans phrase="# comentarios">" none="<__trans phrase="No comentarios">"$>
+            </a>
+        </mt:IfCommentsActive>
+
+    </div>
+
+<mt:IfCommentsActive><span class="separator">|</span> <a href="<$mt:EntryPermalink$>#comments"><$mt:EntryCommentCount singular="<__trans phrase="1 Comment">" plural="<__trans phrase="# Comments">" none="<__trans phrase="No Comments">"$></a></mt:IfCommentsActive>
+
+
 </div>
