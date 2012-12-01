@@ -170,7 +170,7 @@ html, body {
           .container-fluid div.content_container .content .post #comments .comment p.comment_datetime {
             font-size: 0.9em;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-          .container-fluid div.content_container .content .post #comments .comment p.comment_text {
+          .container-fluid div.content_container .content .post #comments .comment div.comment_text {
             color: inherit;
             background: white;
             padding: 0.5em;
