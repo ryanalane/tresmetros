@@ -1,14 +1,34 @@
-<mt:Ignore>
-<!-- Display comments for the entry/page or commenting form if entry/page is accepting comments -->
-</mt:Ignore>
 <mt:IfCommentsActive>
 
-<div id="comments" class="comments">
+    <div id="comments">
+
+        <div class="comment">
+            <h3>some person</h3>
+            <p class="comment_datetime">1.12.2012 a las 13:18</p>
+            <p class="comment_text">comment comment comment text</p>
+        </div>
+
+        <div class="comment">
+            <h3>Salva Andolini</h3>
+            <p class="comment_datetime">1.12.2012 a las 13:18</p>
+            <p class="comment_text">super duper long comment. Hello hello hello hello. Goodbye. Play me something like "Here Comes the Sun". super duper long comment. Hello hello hello hello. Goodbye. Play me something like "Here Comes the Sun". super duper long comment. Hello hello hello hello. Goodbye. Play me something like "Here Comes the Sun".</p>
+        </div>
+
+        <div class="comment">
+            <h3>another person</h3>
+            <p class="comment_datetime">1.12.2012 a las 13:18</p>
+            <p class="comment_text">comment comment comment text</p>
+        </div>
+
+        <div class="comment">
+            <h3>some person</h3>
+            <p class="comment_datetime">1.12.2012 a las 13:18</p>
+            <p class="comment_text">comment comment comment text</p>
+        </div>
+
+    </div>
 
 
-    <mt:Ignore>
-    <!-- Display comments -->
-    </mt:Ignore>
     <mt:Comments lastn="$comments_per_page">
         <mt:CommentsHeader>
     <h2 class="comments-header"><$mt:EntryCommentCount singular="1 Comment" plural="# Comments" none="No Comments"$></h2>
