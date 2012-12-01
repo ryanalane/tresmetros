@@ -1,33 +1,6 @@
 <mt:IfCommentsActive>
 
-    <div id="comments">
-
-        <div class="comment">
-            <h3>some person</h3>
-            <p class="comment_datetime">1.12.2012 a las 13:18</p>
-            <p class="comment_text">comment comment comment text</p>
-        </div>
-
-        <div class="comment">
-            <h3>Salva Andolini</h3>
-            <p class="comment_datetime">1.12.2012 a las 13:18</p>
-            <p class="comment_text">super duper long comment. Hello hello hello hello. Goodbye. Play me something like "Here Comes the Sun". super duper long comment. Hello hello hello hello. Goodbye. Play me something like "Here Comes the Sun". super duper long comment. Hello hello hello hello. Goodbye. Play me something like "Here Comes the Sun".</p>
-        </div>
-
-        <div class="comment">
-            <h3>another person</h3>
-            <p class="comment_datetime">1.12.2012 a las 13:18</p>
-            <p class="comment_text">comment comment comment text</p>
-        </div>
-
-        <div class="comment">
-            <h3>some person</h3>
-            <p class="comment_datetime">1.12.2012 a las 13:18</p>
-            <p class="comment_text">comment comment comment text</p>
-        </div>
-
-    </div>
-
+<div id="comments"> 
 
     <mt:Comments lastn="$comments_per_page">
         <mt:CommentsHeader>
@@ -44,11 +17,11 @@
         </li>
     </ul>
             </mt:If>
-    <div id="comments-content" class="comments-content">
         </mt:CommentsHeader>
+
         <$mt:Include module="Comment Detail"$>
+
         <mt:CommentsFooter>
-    </div>
             <mt:If tag="EntryCommentCount" gt="$comments_per_page">
                 <mt:Ignore>The data is modified by the paginate script</mt:Ignore>
     <ul id="comment-nav">

@@ -2,21 +2,6 @@
 
     <h3><$mt:CommentAuthor$></h3>
     <p class="comment_datetime"><$mt:CommentDate format="%d.%m.%Y a las %H:%M"$></p>
-
-    <div class="asset-meta">
-        <span class="byline">
-            <$mt:CommentAuthorIdentity$>
-<mt:IfCommentParent>
-            <span class="vcard author"><$mt:CommentAuthorLink$></span> replied to <a href="<mt:CommentParent><$mt:CommentLink$></mt:CommentParent>">comment from <mt:CommentParent><$mt:CommentAuthor$></mt:CommentParent></a>
-<mt:Else>
-            <span class="vcard author"><$mt:CommentAuthorLink$></span>
-</mt:IfCommentParent>
-            | <a href="<$mt:CommentLink$>"><abbr class="published" title="<$mt:CommentDate format_name="iso8601"$>"><$mt:CommentDate$></abbr></a>
-<mt:IfCommentsAccepted>
-            | <$mt:CommentReplyToLink$>
-</mt:IfCommentsAccepted>
-        </span>
-    </div>
     <p class="comment_text">
         <$mt:CommentBody$>
     </p>
