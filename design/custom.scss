@@ -42,6 +42,8 @@ $post_title_color: $white;
 $post_title_bg_color: $maroon;
 $post_link_color: $maroon;
 
+$comment_bg_color: $white;
+
 
 html, body {
 	height: 100%;
@@ -259,13 +261,31 @@ html, body {
 
 				.post_footer {
 					margin-top: 0.5em;
-					// font-size: 1.1em;
 
-					a.comments {
+					a.comments_link {
 						color: $post_link_color;
 					}
 				}
+
+				.comments {
+					border-top: 1px black dotted;
+					margin-top: 1em;
+
+					.comment {
+						color: inherit;
+						background-color: $comment_bg_color;
+						h3 {
+							margin-top: 0;
+							font-size: 1.1em;
+						}
+						
+						p {
+							font-family: $post_content_font_family;	
+						}
+					}	
+				}
 			}
+
 
 			// Arrow Styles
 

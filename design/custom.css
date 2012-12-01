@@ -148,8 +148,19 @@ html, body {
         font-family: Tahoma, Verdana, Helvetica, sans-serif; }
       .container-fluid div.content_container .content .post .post_footer {
         margin-top: 0.5em; }
-        .container-fluid div.content_container .content .post .post_footer a.comments {
+        .container-fluid div.content_container .content .post .post_footer a.comments_link {
           color: #a20339; }
+      .container-fluid div.content_container .content .post .comments {
+        border-top: 1px black dotted;
+        margin-top: 1em; }
+        .container-fluid div.content_container .content .post .comments .comment {
+          color: inherit;
+          background-color: #f3f3f4; }
+          .container-fluid div.content_container .content .post .comments .comment h3 {
+            margin-top: 0;
+            font-size: 1.1em; }
+          .container-fluid div.content_container .content .post .comments .comment p {
+            font-family: Tahoma, Verdana, Helvetica, sans-serif; }
     .container-fluid div.content_container .content.arrow_box {
       position: relative;
       background: #f3f3f4;
