@@ -39,6 +39,11 @@ html, body {
       color: #f3f3f4;
       background: rgba(0, 0, 0, 0.5);
       border-top: none; }
+      .container-fluid .header .site_title a {
+        color: inherit;
+        background: transparent; }
+        .container-fluid .header .site_title a:hover {
+          text-decoration: none; }
     .container-fluid .header .header_nav {
       float: right;
       list-style: none;

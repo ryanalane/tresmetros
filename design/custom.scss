@@ -94,6 +94,15 @@ html, body {
 			color: $site_title_color;
 			background: $site_title_bg_color;
 			border-top: none;
+
+			a {
+				color: inherit;
+				background: transparent;
+
+				&:hover {
+					text-decoration: none;	
+				}
+			}
 		}
 
 		.header_nav {
