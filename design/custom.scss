@@ -317,6 +317,16 @@ html, body {
 						line-height: 1.5em;
 						font-family: $helvetica_priority;
 					}
+
+					#comments-form {
+						width: 25em;
+					}
+					textarea#comment-text {
+						width: 25em;
+						font-size: 1.25em;
+						color: $black;
+						font-family: $post_content_font_family;
+					}
 				}
 			}
 

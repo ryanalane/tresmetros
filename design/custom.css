@@ -185,6 +185,13 @@ html, body {
           font-size: 1.25em;
           line-height: 1.5em;
           font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+        .container-fluid div.content_container .content .post .comment_submission #comments-form {
+          width: 25em; }
+        .container-fluid div.content_container .content .post .comment_submission textarea#comment-text {
+          width: 25em;
+          font-size: 1.25em;
+          color: #231f20;
+          font-family: Tahoma, Verdana, Helvetica, sans-serif; }
     .container-fluid div.content_container .content.arrow_box {
       position: relative;
       background: #f3f3f4;
