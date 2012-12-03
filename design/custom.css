@@ -185,8 +185,6 @@ html, body {
           font-size: 1.25em;
           line-height: 1.5em;
           font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-        .container-fluid div.content_container .content .post .comment_submission #comments-form {
-          width: 25em; }
         .container-fluid div.content_container .content .post .comment_submission textarea#comment-text {
           width: 25em;
           font-size: 1.25em;
