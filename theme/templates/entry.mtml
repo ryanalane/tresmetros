@@ -56,11 +56,17 @@
 
                 <div class="post_footer">
 
-                    <mt:IfCommentsActive>
-                        <a href="<$mt:EntryPermalink$>#comments" class="comments_link">
-                            <$mt:EntryCommentCount singular="<__trans phrase="1 comentario">" plural="<__trans phrase="# comentarios">" none="<__trans phrase="No comentarios">"$>
-                        </a>
-                    </mt:IfCommentsActive>
+                    <div class="social_buttons">
+                        <div class="fb-like" data-href="<$mt:EntryPermalink$>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="tahoma"></div>
+                    </div>
+
+                    <div>
+                        <mt:IfCommentsActive>
+                            <a href="<$mt:EntryPermalink$>#comments" class="comments_link">
+                                <$mt:EntryCommentCount singular="<__trans phrase="1 comentario">" plural="<__trans phrase="# comentarios">" none="<__trans phrase="No comentarios">"$>
+                            </a>
+                        </mt:IfCommentsActive>
+                </div>
 
                 </div>
 
