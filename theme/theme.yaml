@@ -66,6 +66,8 @@ elements:
             label: Comments
           entry_summary:
             label: 'Entry Summary'
+          entry_footer:
+            label: 'Entry Footer'
           html_head:
             label: 'HTML Head'
           sidebar:
