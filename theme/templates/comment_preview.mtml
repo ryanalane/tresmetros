@@ -48,15 +48,7 @@
                     </div>
                 </mt:If>
 
-                <div class="post_footer">
-
-                    <mt:IfCommentsActive>
-                        <a href="<$mt:EntryPermalink$>#comments" class="comments_link">
-                            <$mt:EntryCommentCount singular="<__trans phrase="1 comentario">" plural="<__trans phrase="# comentarios">" none="<__trans phrase="No comentarios">"$>
-                        </a>
-                    </mt:IfCommentsActive>
-
-                </div>
+                <$mt:Include module="<__trans phrase="Entry Footer">"$>
 
                 <div id="comments"> 
     <mt:Ignore><!-- Comment Preview --></mt:Ignore>
