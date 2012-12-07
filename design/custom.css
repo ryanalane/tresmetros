@@ -157,6 +157,9 @@ html, body {
           color: #a20339; }
         .container-fluid div.content_container .content .post .post_footer .social_button {
           display: inline-block; }
+          .container-fluid div.content_container .content .post .post_footer .social_button.tweet iframe {
+            width: 80px;
+            margin-bottom: -3px; }
       .container-fluid div.content_container .content .post #comments {
         border-top: 0.1em #4b4347 solid;
         margin-top: 0.75em; }

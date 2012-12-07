@@ -277,6 +277,17 @@ html, body {
 
 					.social_button {
 						display: inline-block;
+
+						&.tweet {
+							iframe {
+								width: 80px;
+								margin-bottom: -3px;	
+							}
+						}
+
+						&.g_plus_one {
+
+						}
 					}
 				}
 
