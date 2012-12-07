@@ -60,8 +60,10 @@ elements:
             label: 'Banner Footer'
           banner_header:
             label: 'Banner Header'
-          body_footer:
-            label: 'Body Footer'
+          body_javascript_footer:
+            label: 'Body Javascript Footer'
+          body_javascript_header:
+            label: 'Body Javascript Header'
           comment_detail:
             label: 'Comment Detail'
           comments:

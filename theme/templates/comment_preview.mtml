@@ -12,14 +12,7 @@
 </head>
 <body id="<$mt:BlogThemeID$>" class="mt-comment-preview <$mt:Var name="page_layout"$>" onload="mtEntryOnLoad()" onunload="mtEntryOnUnload()">
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script> 
+<$mt:Include module="<__trans phrase="Body Javascript Header">"$>
 
 <div class="container-fluid">
 
@@ -116,7 +109,7 @@
 
 </div>
 
-<$mt:Include module="<__trans phrase="Body Footer">"$>
+<$mt:Include module="<__trans phrase="Body Javascript Footer">"$>
 
 </body>
 </html>
