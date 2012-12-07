@@ -66,10 +66,10 @@ elements:
             label: 'Comment Detail'
           comments:
             label: Comments
-          entry_summary:
-            label: 'Entry Summary'
           entry_footer:
             label: 'Entry Footer'
+          entry_summary:
+            label: 'Entry Summary'
           html_head:
             label: 'HTML Head'
           sidebar:
