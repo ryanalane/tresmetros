@@ -161,7 +161,7 @@ html, body {
             margin-left: 27px;
             margin-bottom: -3px; }
           .container-fluid div.content_container .content .post .post_footer .social_button.linked_in {
-            margin-bottom: -5px; }
+            vertical-align: middle; }
       .container-fluid div.content_container .content .post #comments {
         border-top: 0.1em #4b4347 solid;
         margin-top: 0.75em; }
