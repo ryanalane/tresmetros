@@ -155,6 +155,8 @@ html, body {
         margin-top: 0.5em; }
         .container-fluid div.content_container .content .post .post_footer a.comments_link {
           color: #a20339; }
+        .container-fluid div.content_container .content .post .post_footer .social_button {
+          display: inline-block; }
       .container-fluid div.content_container .content .post #comments {
         border-top: 0.1em #4b4347 solid;
         margin-top: 0.75em; }

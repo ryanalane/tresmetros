@@ -274,6 +274,10 @@ html, body {
 					a.comments_link {
 						color: $post_link_color;
 					}
+
+					.social_button {
+						display: inline-block;
+					}
 				}
 
 				#comments {
