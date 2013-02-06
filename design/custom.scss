@@ -218,34 +218,47 @@ html, body {
 					}
 				}
 
-				.title {
-					font-family: $serif_title_font_family; 
-					font-weight: 400;
-					font-size: 2em;
-					line-height: 1.1em;
-					letter-spacing: 0.1em;
-					padding: 0.25em 0 0.25em 0.5em;
-					margin: 0 -0.5em;
+				h2 {
+					font-family: $subtitle_font_family;
 
-					color: $post_title_color;	
-					background: $post_title_bg_color;
-					border: 1px $black solid;
+					&.title {
+						font-family: $serif_title_font_family; 
+						font-weight: 400;
+						font-size: 2em;
+						line-height: 1.1em;
+						letter-spacing: 0.1em;
+						padding: 0.25em 0 0.25em 0.5em;
+						margin: 0 -0.5em;
 
-					a {
-						color: inherit;	
-						background: inherit;	
+						color: $post_title_color;	
+						background: $post_title_bg_color;
+						border: 1px $black solid;
 
-						&:hover {
-							color: $grey;
-							backround: inherit;
-							text-decoration: none;
-						}
-					}					
+						a {
+							color: inherit;	
+							background: inherit;	
 
-					$post_title_box_shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
-					-moz-box-shadow: $post_title_box_shadow;
-					-webkit-box-shadow: $post_title_box_shadow;
-					box-shadow: $post_title_box_shadow;
+							&:hover {
+								color: $grey;
+								backround: inherit;
+								text-decoration: none;
+							}
+						}					
+
+						$post_title_box_shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+						-moz-box-shadow: $post_title_box_shadow;
+						-webkit-box-shadow: $post_title_box_shadow;
+						box-shadow: $post_title_box_shadow;
+					}
+				}
+
+				.author_photo_container {
+					margin-top: 3em;
+					text-align: center;
+					.author_photo {
+						border: 1em $maroon solid;
+						margin: 0 3em;
+					}
 				}
 
 				.byline {
