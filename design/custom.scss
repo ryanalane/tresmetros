@@ -252,13 +252,18 @@ html, body {
 					}
 				}
 
-				.author_photo_container {
-					margin-top: 3em;
-					text-align: center;
-					.author_photo {
-						border: 1em $maroon solid;
-						margin: 0 3em;
-					}
+				h3 {
+					font-family: $sans_serif_content_font_family;
+					font-size: 1.3em;
+					letter-spacing: 0.1em;
+					margin: 0;
+				}
+
+				.author_photo {
+					display: inline-block;
+					float: left;
+					border: 1em $maroon solid;
+					margin-right: 3em;
 				}
 
 				.byline {
@@ -279,6 +284,13 @@ html, body {
 				.post_content {
 					padding: 0;
 					font-family: $post_content_font_family;
+
+					&.author_bio {
+						display: inline-block;
+						margin-bottom: 3em;
+					}
+
+
 				}
 
 				.post_footer {

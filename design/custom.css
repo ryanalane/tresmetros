@@ -140,12 +140,16 @@ html, body {
               color: #ccc7c7;
               backround: inherit;
               text-decoration: none; }
-      .container-fluid div.content_container .content .post .author_photo_container {
-        margin-top: 3em;
-        text-align: center; }
-        .container-fluid div.content_container .content .post .author_photo_container .author_photo {
-          border: 1em #a20339 solid;
-          margin: 0 3em; }
+      .container-fluid div.content_container .content .post h3 {
+        font-family: Tahoma, Verdana, Helvetica, sans-serif;
+        font-size: 1.3em;
+        letter-spacing: 0.1em;
+        margin: 0; }
+      .container-fluid div.content_container .content .post .author_photo {
+        display: inline-block;
+        float: left;
+        border: 1em #a20339 solid;
+        margin-right: 3em; }
       .container-fluid div.content_container .content .post .byline {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 1.25em;
@@ -159,6 +163,9 @@ html, body {
       .container-fluid div.content_container .content .post .post_content {
         padding: 0;
         font-family: Tahoma, Verdana, Helvetica, sans-serif; }
+        .container-fluid div.content_container .content .post .post_content.author_bio {
+          display: inline-block;
+          margin-bottom: 3em; }
       .container-fluid div.content_container .content .post .post_footer {
         margin-top: 0.5em; }
         .container-fluid div.content_container .content .post .post_footer a.comments_link {
