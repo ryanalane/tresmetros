@@ -117,27 +117,39 @@ html, body {
         .container-fluid div.content_container .content .post .date .month_year_row {
           display: inline-block;
           text-transform: lowercase; }
-      .container-fluid div.content_container .content .post .title {
-        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-        font-weight: 400;
-        font-size: 2em;
-        line-height: 1.1em;
+      .container-fluid div.content_container .content .post h2 {
+        font-family: "BandaRegularRegular", "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+        .container-fluid div.content_container .content .post h2.title {
+          font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+          font-weight: 400;
+          font-size: 2em;
+          line-height: 1.1em;
+          letter-spacing: 0.1em;
+          padding: 0.25em 0 0.25em 0.5em;
+          margin: 0 -0.5em;
+          color: #f3f3f4;
+          background: #a20339;
+          border: 1px #231f20 solid;
+          -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+          -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3); }
+          .container-fluid div.content_container .content .post h2.title a {
+            color: inherit;
+            background: inherit; }
+            .container-fluid div.content_container .content .post h2.title a:hover {
+              color: #ccc7c7;
+              backround: inherit;
+              text-decoration: none; }
+      .container-fluid div.content_container .content .post h3 {
+        font-family: Tahoma, Verdana, Helvetica, sans-serif;
+        font-size: 1.3em;
         letter-spacing: 0.1em;
-        padding: 0.25em 0 0.25em 0.5em;
-        margin: 0 -0.5em;
-        color: #f3f3f4;
-        background: #a20339;
-        border: 1px #231f20 solid;
-        -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
-        -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
-        box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3); }
-        .container-fluid div.content_container .content .post .title a {
-          color: inherit;
-          background: inherit; }
-          .container-fluid div.content_container .content .post .title a:hover {
-            color: #ccc7c7;
-            backround: inherit;
-            text-decoration: none; }
+        margin: 0; }
+      .container-fluid div.content_container .content .post .author_photo {
+        display: inline-block;
+        float: left;
+        border: 0.5em #a20339 solid;
+        margin-right: 3em; }
       .container-fluid div.content_container .content .post .byline {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 1.25em;
@@ -151,6 +163,9 @@ html, body {
       .container-fluid div.content_container .content .post .post_content {
         padding: 0;
         font-family: Tahoma, Verdana, Helvetica, sans-serif; }
+        .container-fluid div.content_container .content .post .post_content.author_bio {
+          display: inline-block;
+          margin-bottom: 3em; }
       .container-fluid div.content_container .content .post .post_footer {
         margin-top: 0.5em; }
         .container-fluid div.content_container .content .post .post_footer a.comments_link {
@@ -225,7 +240,7 @@ html, body {
       border-left-color: #231f20;
       border-width: 1.0em;
       top: 4em;
-      margin-top: -1em; }
+      margin-top: -1.0em; }
     .container-fluid div.content_container .side_bar {
       padding: 2.25em 2em;
       height: auto;
